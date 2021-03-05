@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class CommonTermCounter {
 
-    public static Map<String, Long> getCommonWordFrequencyAndCount(List<String> stems) {
+    public Map<String, Long> getCommonWordFrequencyAndCount(List<String> stems) {
 
         // Add freq to map
         final Map<String, Long> collect = stems.stream()

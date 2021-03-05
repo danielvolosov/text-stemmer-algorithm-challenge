@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: solution_tests.StopwordsRemoverTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.015 s <<< FAILURE! - in solution_tests.StopwordsRemoverTest
+testRemoveStopwordsFromTextFile  Time elapsed: 0.011 s  <<< ERROR!
+java.lang.NoSuchMethodError: 'org.mockito.plugins.MockitoLogger org.mockito.internal.configuration.plugins.Plugins.getMockitoLogger()'
+

@@ -13,7 +13,7 @@ public class TextStemmer {
      *
      * @return stemmedWords
      */
-    public static List<String> stemWords(Set<String> wordsWithoutStopwords) {
+    public List<String> stemWords(Set<String> wordsWithoutStopwords) {
 
         List<String> stemmedWords = new ArrayList<>();
 

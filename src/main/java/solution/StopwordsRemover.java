@@ -17,7 +17,7 @@ public class StopwordsRemover {
      * @param textFilePath
      * @return textFileSet
      */
-    public static Set<String> removeStopwordsFromTextFile(Path stopwordsPath, Path textFilePath) {
+    public Set<String> removeStopwordsFromTextFile(Path stopwordsPath, Path textFilePath) {
 
         Set<String> stopwordsSet = new HashSet<>();
         Set<String> textFileSet = new HashSet<>();
