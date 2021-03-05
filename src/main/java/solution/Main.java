@@ -19,9 +19,7 @@ public class Main {
         List<String> stemsOfWords = textStemmer.stemWords(fileWithoutStopwords);
 
         System.out.println("This output represents the words in the input text file without stop words & without non-alphabetical text: " + fileWithoutStopwords);
-//
-//        System.out.println("This output represents the previous output, but all the words are stemmed into their root form: " + stemsOfWords);
-
-//        System.out.println("This output represents the top-20 most commonly occuring terms, as well as the frequency of each term: " + CommonTermCounter.getCommonWordFrequencyAndCount(stemsOfWords));
+        System.out.println("This output represents the previous output, but all the words are stemmed into their root form: " + stemsOfWords);
+        System.out.println("This output represents the top-20 most commonly occuring stems, as well as the frequency of each stem: " + commonTermCounter.getCommonWordFrequencyAndCount(stemsOfWords));
     }
 }
