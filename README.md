@@ -49,22 +49,28 @@ My approach to solving the problems outlined in the question was a modular one, 
 process. I wanted to make it simple to test different files by changing a single constant and executing the program.
 
 Each major requirement is separated into its own class which usually has only one or two methods in order to ensure
-that each class has a single responsibility. I also knew that it would be a much more straightforward process to write unit tests
+that each class follows the single responsibility principle. I also knew that it would be a much more straightforward process to write unit tests
 when I could split up the methods by their smaller objectives.
 
-I also decided to create some documentation for each method to enhance clarity.
+Each method has its own Javadoc to explain purpose.
+
+
 ## Running
 Each output is printed to the console from the main method. The first step is to **change the absolute path for all text files** to reflect your
-own folder structure. I originally tried to use a relative path, but after some issues in getting the files back it looked like the absolute path
-was the best option here.
+own folder structure. I originally tried to use a relative path, but after some issues retrieving files using relative paths - the absolute path
+was the best solution. To prevent repetition, I placed path variables in the constants package.
 
-The stopwords.txt file is final, whereas you may replace Text1.txt with Text2.txt in the constants file to change the input being manipulated.
+The stopwords.txt file does not change, whereas you may replace the Text1.txt variable (textFile1) with Text2.txt variable (textFile2) to change the input being manipulated.
 
 Once this is done, you may right mouse click on the Main class in the solution package and click 'run'. Ensure that your output window is open and you 
 will see each required step displayed on each line.
 
 ## Tests
+Unit tests are all written using Jupiter & Mockito.
 
+You may run unit tests individually, or run all test cases at once by using the following command:   
+
+`````mvn '-Dtest=solution_tests.*Test' test`````
 ## Assumptions
 When looking at sample text files, I would think about how to normalize the strings so that they would be easier to compare.
 I knew that the apostrophe was an important part of individual strings, so it was a character that I
