@@ -19,7 +19,7 @@ public class CommonTermCounter {
                 .limit(20)
                 .collect(Collectors.toList());
 
-        return result;
+        return (Map<String, Long>) result;
     }
 }
 

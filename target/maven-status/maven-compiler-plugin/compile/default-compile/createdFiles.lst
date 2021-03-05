@@ -1,0 +1,6 @@
+solution/CommonTermCounter.class
+constants/Constants.class
+solution/StopwordsRemover.class
+stemmers/PorterStemmer.class
+solution/TextStemmer.class
+solution/Main.class
