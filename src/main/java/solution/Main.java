@@ -3,8 +3,7 @@ package solution;
 import java.util.List;
 import java.util.Set;
 
-import static constants.Constants.stopwordsFile;
-import static constants.Constants.textFile1;
+import static constants.Constants.*;
 
 public class Main {
 

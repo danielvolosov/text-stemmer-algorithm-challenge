@@ -40,7 +40,7 @@ public class StopwordsRemover {
                 String[] words = textFileLine.split(" ");
 
                 for (String word : words) {
-                    word = word.toLowerCase().replaceAll("[-+.^:;,?&\\s+]", "");
+                    word = word.toLowerCase().replaceAll("[-+.`'^:;_,!?()*&\"\\s+]", "");
 
                     if (textFileSet.contains(word) == stopwordsSet.contains(word)) {
                         textFileSet.remove(word);
