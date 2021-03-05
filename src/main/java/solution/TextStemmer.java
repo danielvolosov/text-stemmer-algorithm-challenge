@@ -9,7 +9,7 @@ import java.util.Set;
 public class TextStemmer {
 
     /**
-     * Accepts set of words without stopwords, iterates through words and applied stem method to each word.
+     * Accepts set of words without stopwords, iterates through words and applies Porter Stemmer stem algorithm to each word.
      *
      * @return stemmedWords
      */
@@ -40,8 +40,8 @@ public class TextStemmer {
         for (Character letter : charsOfStem) {
             stemmer.add(letter);
         }
-
         stemmer.stem();
+
         return stemmer.toString();
     }
 }
