@@ -1,7 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: solution_tests.StopwordsRemoverTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.015 s <<< FAILURE! - in solution_tests.StopwordsRemoverTest
-testRemoveStopwordsFromTextFile  Time elapsed: 0.011 s  <<< ERROR!
-java.lang.NoSuchMethodError: 'org.mockito.plugins.MockitoLogger org.mockito.internal.configuration.plugins.Plugins.getMockitoLogger()'
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.032 s <<< FAILURE! - in solution_tests.StopwordsRemoverTest
+testRemoveStopwordsFromTextFile  Time elapsed: 0.027 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <[story]> but was: <[all, a, against, again, about, above, after, story]>
+	at solution_tests.StopwordsRemoverTest.testRemoveStopwordsFromTextFile(StopwordsRemoverTest.java:36)
 

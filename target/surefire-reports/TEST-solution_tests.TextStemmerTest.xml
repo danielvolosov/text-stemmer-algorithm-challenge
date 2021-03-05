@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="solution_tests.StopwordsRemoverTest" time="0.032" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="solution_tests.TextStemmerTest" time="0.02" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,9 +12,10 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/15.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/danielvolosov/Developer/text-stemmer-algorithm-challenge/target/surefire/surefirebooter13458481839878432759.jar /Users/danielvolosov/Developer/text-stemmer-algorithm-challenge/target/surefire 2021-03-05T11-13-10_646-jvmRun1 surefire11545145583242470501tmp surefire_07772218275217071523tmp"/>
+    <property name="sun.java.command" value="/Users/danielvolosov/Developer/text-stemmer-algorithm-challenge/target/surefire/surefirebooter9886735595410756536.jar /Users/danielvolosov/Developer/text-stemmer-algorithm-challenge/target/surefire 2021-03-05T12-00-59_620-jvmRun1 surefire2880289317466585209tmp surefire_018232986102498444704tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
+    <property name="test" value="solution_tests.*Test"/>
     <property name="surefire.test.class.path" value="/Users/danielvolosov/Developer/text-stemmer-algorithm-challenge/target/test-classes:/Users/danielvolosov/Developer/text-stemmer-algorithm-challenge/target/classes:/Users/danielvolosov/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar:/Users/danielvolosov/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/danielvolosov/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/danielvolosov/.m2/repository/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar:/Users/danielvolosov/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar:/Users/danielvolosov/.m2/repository/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/danielvolosov"/>
@@ -28,7 +29,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/Users/danielvolosov/Developer/text-stemmer-algorithm-challenge/target/surefire/surefirebooter13458481839878432759.jar"/>
+    <property name="surefire.real.class.path" value="/Users/danielvolosov/Developer/text-stemmer-algorithm-challenge/target/surefire/surefirebooter9886735595410756536.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="15.0.1+9"/>
@@ -53,9 +54,6 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="testRemoveStopwordsFromTextFile" classname="solution_tests.StopwordsRemoverTest" time="0.027">
-    <failure message="expected: &lt;[story]&gt; but was: &lt;[all, a, against, again, about, above, after, story]&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <[story]> but was: <[all, a, against, again, about, above, after, story]>
-	at solution_tests.StopwordsRemoverTest.testRemoveStopwordsFromTextFile(StopwordsRemoverTest.java:36)
-]]></failure>
-  </testcase>
+  <testcase name="testStemWords" classname="solution_tests.TextStemmerTest" time="0.014"/>
+  <testcase name="testStemWord" classname="solution_tests.TextStemmerTest" time="0.001"/>
 </testsuite>

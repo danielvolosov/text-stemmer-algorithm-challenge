@@ -29,9 +29,9 @@ public class TextStemmer {
      * Implements Porter Stemmer algorithm to reduce each word into its root.
      *
      * @param word
-     * @return
+     * @return stemmed word
      */
-    public static String stemWord(String word) {
+    public String stemWord(String word) {
 
         PorterStemmer stemmer = new PorterStemmer();
 
@@ -40,6 +40,7 @@ public class TextStemmer {
         for (Character letter : charsOfStem) {
             stemmer.add(letter);
         }
+
         stemmer.stem();
 
         return stemmer.toString();
